@@ -1,0 +1,88 @@
+.calculator-container {
+  width: 100%; /* Adjust the width as needed */
+  height: 100vh; /* Adjust the height as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator {
+  margin: auto;
+  padding: 1rem; /* Reduced padding for a shorter height */
+  border: 1px solid gray;
+  background-color: rgb(73, 80, 107);
+  color: white;
+  width: 400px; /* Adjust the width as needed */
+  height: 400px; /* Adjust the height as needed */
+  overflow-y: auto; /* Add vertical scroll if needed */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+.result-input {
+  width: calc(100% - 60px); /* Adjust the width with padding subtracted */
+  height: calc(100% - 120px); /* Adjust the height with padding subtracted */
+  padding: 30px;
+  box-sizing: border-box;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 4rem; /* Increased font size */
+  text-align: right;
+}
+
+.calc-keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-row-gap: 15px;
+  grid-column-gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  background: #333333;
+  color: #fff;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 70%;
+  cursor: pointer;
+  height: 65px;
+  width: 65px;
+}
+
+button:active, button:focus {
+  filter: brightness(120%);
+}
+
+.key-zero {
+  grid-column: span 2;
+  width: 100%;
+  border-radius: 30px;
+}
+
+.key-operate {
+  background: #ff9501;
+}
+
+.key-others {
+  background: #a6a6a6;
+  color: #000000;
+}
+
+.decimal {
+  background: #a6a6a6;
+  color: #000000;
+  width: 100%;
+  height: 100%;
+}
+
+#clear {
+  background: #ff0000;
+}
+
+#result-btn {
+  background: #564747;
+}
