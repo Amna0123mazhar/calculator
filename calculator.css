@@ -1,6 +1,6 @@
 .calculator-container {
-  width: 100%; /* Adjust the width as needed */
-  height: 100vh; /* Adjust the height as needed */
+  width: 100%;
+  height: 100vh; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,28 +8,28 @@
 
 .calculator {
   margin: auto;
-  padding: 1rem; /* Reduced padding for a shorter height */
+  padding: 1rem;
   border: 1px solid gray;
   background-color: rgb(73, 80, 107);
   color: white;
-  width: 400px; /* Adjust the width as needed */
-  height: 400px; /* Adjust the height as needed */
-  overflow-y: auto; /* Add vertical scroll if needed */
+  width: 400px;
+  height: 400px; 
+  overflow-y: auto;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
+  justify-content: center; 
+  align-items: center;
 }
 
 .result-input {
-  width: calc(100% - 60px); /* Adjust the width with padding subtracted */
-  height: calc(100% - 120px); /* Adjust the height with padding subtracted */
+  width: calc(100% - 60px); 
+  height: calc(100% - 120px); 
   padding: 30px;
   box-sizing: border-box;
   border: none;
   background-color: rgba(255, 255, 255, 0.1);
   color: white;
-  font-size: 4rem; /* Increased font size */
+  font-size: 4rem; 
   text-align: right;
 }
 
