@@ -39,7 +39,7 @@ operatorBtns.forEach(button => {
     firstOperand = parseFloat(result.value);
     currentOperator = button.value;
     shouldResetScreen = true;
-    secondOperand = parseFloat(result.value); // Set secondOperand here
+    secondOperand = parseFloat(result.value); 
   });
 });
 
